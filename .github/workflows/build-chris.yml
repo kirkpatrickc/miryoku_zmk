@@ -1,0 +1,14 @@
+name: 'Build Totem USB Debugging'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      kconfig: '[
+        "CONFIG_USB=y\nCONFIG_USB_DEVICE_STACK=y\nCONFIG_ZMK_USB_LOGGING=y"
+      ]'
+      board: '[ "seeeduino_xiao_ble" ]'
+      shield: '[ "totem_left","totem_right", ]'
+      alphas: '[ "qwerty" ]'
+      nav: '[ "vi" ]'
