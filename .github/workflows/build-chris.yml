@@ -6,6 +6,6 @@ jobs:
     secrets: inherit
     with:
       board: '[ "seeeduino_xiao_ble" ]'
-      shield: '[ "totem_left","totem_right", ]'
+      shield: '[ "totem_left","totem_right", "totem_dongle" ]'
       alphas: '[ "qwerty" ]'
       nav: '[ "vi" ]'
