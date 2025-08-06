@@ -9,3 +9,4 @@ jobs:
       shield: '[ "totem_left","totem_right", "totem_dongle" ]'
       alphas: '[ "qwerty" ]'
       nav: '[ "vi" ]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
