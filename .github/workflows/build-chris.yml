@@ -6,7 +6,7 @@ jobs:
     secrets: inherit
     with:
       board: '[ "xiao_ble//zmk" ]'
-      shield: '[ "totem_left","totem_right", "totem_dongle" ]'
+      shield: '[ "totem_left","totem_right", "totem_dongle", "settings_reset" ]'
       alphas: '[ "qwerty" ]'
       nav: '[ "vi" ]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
