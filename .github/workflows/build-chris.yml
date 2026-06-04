@@ -1,13 +1,13 @@
 name: 'Build Totem USB Debugging'
-  on: workflow_dispatch
-  jobs:
-    build:
-      uses: ./.github/workflows/main.yml
-      secrets: inherit
-      with:
-        board: '[ "xiao_ble//zmk" ]'
-        shield: '[ "totem_left","totem_right", "totem_dongle", "settings_reset" ]'
-        snippet: '[ "zmk-usb-logging" ]'
-        alphas: '[ "qwerty" ]'
-        nav: '[ "vi" ]'
-        kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y\nCONFIG_BT_LOG_LEVEL_DBG=y\nCONFIG_BT_CONN_LOG_LEVEL_DBG=y\nCONFIG_BT_SMP_LOG_LEVEL_DBG=y"]'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '[ "xiao_ble//zmk" ]'
+      shield: '[ "totem_left","totem_right", "totem_dongle", "settings_reset" ]'
+      snippet: '[ "zmk-usb-logging" ]'
+      alphas: '[ "qwerty" ]'
+      nav: '[ "vi" ]'
+      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y\nCONFIG_BT_LOG_LEVEL_DBG=y\nCONFIG_BT_CONN_LOG_LEVEL_DBG=y\nCONFIG_BT_SMP_LOG_LEVEL_DBG=y"]'
