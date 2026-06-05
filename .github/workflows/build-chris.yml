@@ -1,4 +1,4 @@
-name: 'Build Totem USB Debugging'
+name: 'Build Totem'
 on: workflow_dispatch
 jobs:
   build:
@@ -7,7 +7,7 @@ jobs:
     with:
       board: '[ "xiao_ble//zmk" ]'
       shield: '[ "totem_left","totem_right", "totem_dongle", "settings_reset" ]'
-      snippet: '[ "zmk-usb-logging" ]'
+      # snippet: '[ "zmk-usb-logging" ]'
       alphas: '[ "qwerty" ]'
       nav: '[ "vi" ]'
       # kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y"]'
