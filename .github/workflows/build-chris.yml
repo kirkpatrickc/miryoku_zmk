@@ -10,5 +10,5 @@ jobs:
       snippet: '[ "zmk-usb-logging" ]'
       alphas: '[ "qwerty" ]'
       nav: '[ "vi" ]'
-      # kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y\nCONFIG_BT_CONN_LOG_LEVEL_DBG=y\nCONFIG_BT_SMP_LOG_LEVEL_DBG=y"]'
-      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y"]'
+      # kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_LOG_TIMESTAMP_64BIT=y\nCONFIG_ZMK_LOG_LEVEL_DBG=y"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
